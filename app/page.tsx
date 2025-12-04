@@ -1,7 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Instagram, Facebook, Youtube, Music, ShoppingBag, Calendar, Mail } from "lucide-react";
+import { Menu, X, Instagram, Facebook, Youtube, Music } from "lucide-react";
 import { content } from "./content";
 
 // --- Components ---
@@ -65,21 +65,13 @@ const Section = ({ id, children, className = "" }: { id: string; children: React
 );
 
 export default function Home() {
-  // Use Cal.com embed
-  useEffect(() => {
-    (async function () {
-      const cal = await import("@calcom/embed-react");
-      cal.default("init", {theme: "dark"});
-    })();
-  }, []);
-
   return (
     <main className="min-h-screen bg-black">
       <Navbar />
 
       {/* Hero */}
       <section id="home" className="h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Background placeholder - replace with video or img in production */}
+        {/* Background placeholder */}
         <div className="absolute inset-0 bg-neutral-900 z-0 opacity-50"></div> 
         <div className="relative z-10 text-center px-4">
           <motion.h1 
@@ -110,9 +102,8 @@ export default function Home() {
             <p className="text-gray-500 text-sm leading-relaxed">{content.bio.long}</p>
           </div>
           <div className="aspect-[3/4] bg-neutral-900 relative">
-             {/* Placeholder for DJ Photo */}
-             <div className="absolute inset-0 flex items-center justify-center text-gray-700">
-                [Add Photo to /public]
+             <div className="absolute inset-0 flex items-center justify-center text-gray-700 border border-gray-800">
+                [PHOTO]
              </div>
           </div>
         </div>
@@ -135,7 +126,6 @@ export default function Home() {
             <a href={content.brand.socials.soundcloud} target="_blank" className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
               <Music size={20} /> <span>SoundCloud</span>
             </a>
-            {/* Add Spotify/Apple Music here similarly */}
           </div>
         </div>
       </Section>
@@ -167,7 +157,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {content.shop.map((item) => (
             <div key={item.id} className="group cursor-pointer">
-              <div className="aspect-square bg-neutral-900 mb-4 overflow-hidden">
+              <div className="aspect-square bg-neutral-900 mb-4 overflow-hidden relative border border-gray-800">
                 <img src={item.image} alt={item.name} className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity" />
               </div>
               <div className="flex justify-between items-start">
@@ -188,14 +178,15 @@ export default function Home() {
           <h2 className="font-display text-4xl mb-4 uppercase">Booking</h2>
           <p className="text-gray-400 mb-12">For worldwide bookings and inquiries.</p>
           
-          {/* Cal.com Button Trigger */}
-          <button 
-            data-cal-link={content.calComLink}
-            data-cal-config='{"theme":"dark"}'
-            className="bg-white text-black px-8 py-4 font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors mb-16"
+          {/* SAFE BOOKING BUTTON (No Embed Errors) */}
+          <a 
+            href={`https://cal.com/${content.calComLink}`}
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-black px-8 py-4 font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors mb-16"
           >
             Book Now
-          </button>
+          </a>
 
           <div className="border-t border-gray-800 pt-12">
             <h3 className="uppercase text-sm tracking-widest text-gray-500 mb-6">Connect</h3>
