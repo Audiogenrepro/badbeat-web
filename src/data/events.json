@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "name": "Oddessy Noir",
+    "date": "2025-12-13T22:00:00",
+    "venue": "Area15",
+    "city": "Las Vegas",
+    "ticketUrl": "#",
+    "flyerImage": "/image1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Badbeat & Friends",
+    "date": "2025-12-20T22:00:00",
+    "venue": "Pachi Pachi",
+    "city": "Las Vegas",
+    "ticketUrl": "#",
+    "flyerImage": "/image2.jpg"
+  },
+  {
+    "id": "3",
+    "name": "TTT",
+    "date": "2025-12-31T23:00:00",
+    "venue": "Terrace Afterhours",
+    "city": "Las Vegas",
+    "ticketUrl": "#",
+    "flyerImage": "/image3.jpg"
+  }
+]
