@@ -52,11 +52,11 @@ export default function AboutPage() {
             </div>
             <div>
                 <h4 className="font-bold uppercase text-white">Base</h4>
-                <p className="text-xs text-grey">Las Vegas, NV</p>
+                <p className="text-xs text-grey">LAS VEGAS, NV</p>
             </div>
             <div>
                 <h4 className="font-bold uppercase text-white">Focus</h4>
-                <p className="text-xs text-grey">For the Love of Music</p>
+                <p className="text-xs text-grey">TECHNO | HOUSE | TECHOUSE</p>
             </div>
             <div>
                 <h4 className="font-bold uppercase text-white">Affiliation</h4>
