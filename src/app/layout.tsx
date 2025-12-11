@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";  // <--- IMPORT MUST BE HERE
+// 👇 THIS WAS MISSING
+import Navbar from "@/components/Navbar"; 
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -10,7 +11,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", weight: ["40
 
 export const metadata: Metadata = {
   title: "BADBEAT | Underground Techno & House",
-  description: "Official website for DJ Badbeat.",
+  description: "Official website for DJ Badbeat. Las Vegas based Underground Techno and Stripped House.",
+  metadataBase: new URL("https://www.djbadbeat.com"),
 };
 
 export default function RootLayout({
@@ -20,8 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${inter.variable} bg-background text-foreground antialiased`}>
-        <Navbar />  {/* <--- THIS LINE IS CRITICAL. IS IT HERE? */}
+      <body className={`${montserrat.variable} ${inter.variable} bg-background text-foreground antialiased selection:bg-white selection:text-black`}>
+        {/* 👇 THIS WAS ALSO LIKELY MISSING OR NOT WORKING WITHOUT THE IMPORT */}
+        <Navbar />
         <main className="min-h-screen pt-20">{children}</main>
         <Footer />
         <Analytics />
