@@ -6,14 +6,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="flex flex-col items-start justify-between gap-10 md:flex-row">
           <div>
-            <h3 className="font-heading text-2xl font-black uppercase">Badbeat</h3>
-            <p className="mt-2 text-sm text-grey">Underground Techno / Stripped House</p>
+            <h3 className="font-heading text-2xl font-black uppercase">BADBEAT</h3>
+            <p className="mt-2 text-sm text-grey">Underground Techno & House</p>
             <p className="text-sm text-grey">Las Vegas, NV</p>
           </div>
           
           <div className="flex flex-col gap-4">
              <h4 className="font-bold uppercase tracking-widest text-sm">Booking</h4>
-             <a href="mailto:bookings@djbadbeat.com" className="hover:text-grey text-lg underline underline-offset-4">bookings@djbadbeat.com</a>
+             <a href="mailto:bookings@mntra.vegas" className="hover:text-grey text-lg underline underline-offset-4">bookings@mntra.vegas</a>
           </div>
 
           <div>
