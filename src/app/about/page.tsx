@@ -13,7 +13,7 @@ export default function AboutPage() {
           {/* Bio Text */}
           <div className="space-y-6 text-sm leading-relaxed text-grey md:text-base">
             <p>
-              <strong className="text-white">BADBEAT</strong> is a producer and selector shaped by the desert heat of Las Vegas and the raw energy of CD Juarez.
+              <strong className="text-white">BADBEAT</strong> is a producer and selector shaped by the desert heat of Las Vegas and the raw energy of Mexico.
             </p>
             <p>
               Working strictly within the realms of stripped rhythm, repetition, and tension, his sound focuses on raw percussion, mechanical pulse, and subtle distortion. It is built to hold pressure on a floor—refined through real impact rather than theory.
@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div className="relative min-h-[400px] border border-white/10 bg-neutral-900">
              {/* Reusing the hero image here, but cropped to focus on the artist */}
              <Image 
-                src="/hero.jpg" 
+                src="/heros.jpg" 
                 alt="Badbeat Profile" 
                 fill 
                 className="object-cover grayscale"
@@ -48,7 +48,7 @@ export default function AboutPage() {
         <div className="mt-20 grid grid-cols-2 gap-8 border-t border-white/10 pt-8 md:grid-cols-4">
             <div>
                 <h4 className="font-bold uppercase text-white">Origin</h4>
-                <p className="text-xs text-grey">CD Juarez, MX</p>
+                <p className="text-xs text-grey">MEXICO</p>
             </div>
             <div>
                 <h4 className="font-bold uppercase text-white">Base</h4>
@@ -56,11 +56,11 @@ export default function AboutPage() {
             </div>
             <div>
                 <h4 className="font-bold uppercase text-white">Focus</h4>
-                <p className="text-xs text-grey">Underground Techno / House</p>
+                <p className="text-xs text-grey">For the Love of Music</p>
             </div>
             <div>
                 <h4 className="font-bold uppercase text-white">Affiliation</h4>
-                <p className="text-xs text-grey">MNTRA / TTT</p>
+                <p className="text-xs text-grey">MNTRA | TRONIC | TTT</p>
             </div>
         </div>
       </div>
