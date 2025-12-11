@@ -68,8 +68,7 @@ export default function Home() {
             <h3 className="mb-12 font-heading text-3xl font-black uppercase text-white text-center">Visuals</h3>
             <div className="relative aspect-video w-full overflow-hidden border border-white/10">
                 <video controls className="h-full w-full object-cover">
-                    <source src="/videoreel.mov" type="video/mp4" />
-                    <source src="/videoreel.mov" type="video/quicktime" />
+                    <source src="/videoreel.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
