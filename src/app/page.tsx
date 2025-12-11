@@ -30,7 +30,7 @@ export default function Home() {
              <Image src="/bblogo.png" alt="Badbeat" fill className="object-contain" />
           </div>
           <h2 className="font-heading text-xl font-bold uppercase tracking-[0.2em] text-white md:text-2xl">
-            Underground Techno / House
+            MNTRA | TRONIC | TECHNO TACO TUESDAY
           </h2>
           <p className="mt-2 text-sm uppercase tracking-widest text-white/80">Las Vegas</p>
           
@@ -52,7 +52,7 @@ export default function Home() {
       {/* Featured Mix */}
       <section className="bg-black py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <h3 className="mb-8 font-heading text-3xl font-black uppercase text-white">Latest Sound</h3>
+          <h3 className="mb-8 font-heading text-3xl font-black uppercase text-white">Latest Music</h3>
           <div className="w-full border border-white/20">
              {/* Using standard iframe for robust SoundCloud embedding without heavy libs */}
              <iframe 
