@@ -20,7 +20,8 @@ export default function Home() {
           src="/hero.jpg"
           alt="Badbeat Hero"
           fill
-          className="object-cover"
+          // CHANGED: added 'object-top' to fix the cut-off issue
+          className="object-cover object-top"
           priority
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -33,12 +34,16 @@ export default function Home() {
           </h2>
           <p className="mt-2 text-sm uppercase tracking-widest text-white/80">Las Vegas</p>
           
-          <div className="mt-10 flex gap-6">
+          <div className="mt-10 flex flex-wrap justify-center gap-6">
             <Link href="/listen" className="border border-white bg-white px-8 py-3 text-sm font-bold uppercase text-black transition hover:bg-black hover:text-white">
               Listen
             </Link>
             <Link href="/events" className="border border-white px-8 py-3 text-sm font-bold uppercase text-white transition hover:bg-white hover:text-black">
               Events
+            </Link>
+            {/* ADDED: New Bookings Button */}
+            <Link href="/bookings" className="border border-white px-8 py-3 text-sm font-bold uppercase text-white transition hover:bg-white hover:text-black">
+              Bookings
             </Link>
           </div>
         </div>
