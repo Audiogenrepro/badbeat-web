@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", weight: ["40
 
 export const metadata: Metadata = {
   title: "BADBEAT | Underground Techno & House",
-  description: "Official website for DJ Badbeat. Las Vegas based Underground Techno and Stripped House.",
+  description: "Official website for BADBEAT. Las Vegas based Underground Techno and House.",
   metadataBase: new URL("https://www.djbadbeat.com"),
 };
 
