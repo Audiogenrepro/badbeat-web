@@ -20,7 +20,7 @@ export default function BookingsPage() {
     <div className="min-h-screen bg-black px-6 py-20 text-white">
       <div className="mx-auto max-w-2xl">
         <h1 className="mb-4 font-heading text-5xl font-black uppercase">Bookings</h1>
-        <p className="mb-12 text-grey">For bookings and inquiries, please fill out the form below or email <a href="mailto:bookings@djbadbeat.com" className="text-white underline">bookings@djbadbeat.com</a>.</p>
+        <p className="mb-12 text-grey">For bookings and inquiries, please fill out the form below or email <a href="mailto:bookings@mntra.vegas" className="text-white underline">bookings@mntra.vegas</a>.</p>
 
         <div className="mb-12 border border-white/20 bg-neutral-900 p-8">
             <h2 className="mb-6 font-bold uppercase">Press Kit</h2>
