@@ -74,7 +74,7 @@ export default function Home() {
             <div className="relative aspect-video w-full overflow-hidden border border-white/10">
                 <iframe
                   className="h-full w-full object-cover"
-                  src="https://www.youtube.com/embed/gZCyAk2_cVU?rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/gZCyAk2_cVU?si=TM8I98DAgrUsYmBu"
                   title="Badbeat Visuals"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
